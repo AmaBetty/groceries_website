@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop — Freshly Premium Groceries</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🌿</div>
+        Freshly
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="shop.html" class="btn btn-primary nav-cta">Shop Now</a>
+      <div class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── SHOP HERO ──────────────────────────────────────────── -->
+  <section class="shop-hero">
+    <div class="shop-hero-bg"></div>
+    <div class="shop-hero-inner container">
+      <div class="section-tag anim-fade-up">Our Store</div>
+      <h1 class="anim-fade-up delay-1">Fresh <em style="font-style:italic;color:var(--clr-green);">Everything</em></h1>
+      <p class="anim-fade-up delay-2">Browse 800+ hand-picked, organic products sourced from trusted local farms.</p>
+    </div>
+  </section>
+
+  <!-- ── FILTER BAR ─────────────────────────────────────────── -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filter-inner glass">
+        <div class="filter-cats">
+          <span class="filter-tag active">All</span>
+          <span class="filter-tag">Fruits</span>
+          <span class="filter-tag">Vegetables</span>
+          <span class="filter-tag">Dairy & Eggs</span>
+          <span class="filter-tag">Beverages</span>
+          <span class="filter-tag">Bakery</span>
+          <span class="filter-tag">Pantry</span>
+          <span class="filter-tag">Organic</span>
+        </div>
+        <div class="filter-sort">
+          <label for="sort">Sort:</label>
+          <select id="sort">
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+            <option>Best Rated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SHOP LAYOUT ────────────────────────────────────────── -->
+  <section class="shop-section">
+    <div class="container">
+      <div class="shop-layout">
+
+        <!-- Sidebar -->
+        <aside class="shop-sidebar">
+
+          <div class="sidebar-widget">
+            <h4>Categories</h4>
+            <div class="sidebar-item">All Products <span class="sidebar-count">248</span></div>
+            <div class="sidebar-item">Fruits <span class="sidebar-count">48</span></div>
+            <div class="sidebar-item">Vegetables <span class="sidebar-count">64</span></div>
+            <div class="sidebar-item">Dairy & Eggs <span class="sidebar-count">32</span></div>
+            <div class="sidebar-item">Beverages <span class="sidebar-count">55</span></div>
+            <div class="sidebar-item">Bakery <span class="sidebar-count">28</span></div>
+            <div class="sidebar-item">Pantry Staples <span class="sidebar-count">21</span></div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4>Price Range</h4>
+            <div class="price-range">
+              <p>$0 — $50</p>
+              <div class="range-bar">
+                <div class="range-fill"></div>
+                <div class="range-dot rd-left"></div>
+                <div class="range-dot rd-right"></div>
+              </div>
+              <div class="range-vals"><span>$2</span><span>$42</span></div>
+            </div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4>Dietary</h4>
+            <div class="sidebar-item">Organic <span class="sidebar-count">120</span></div>
+            <div class="sidebar-item">Vegan <span class="sidebar-count">88</span></div>
+            <div class="sidebar-item">Gluten-Free <span class="sidebar-count">54</span></div>
+            <div class="sidebar-item">Keto-Friendly <span class="sidebar-count">40</span></div>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4>Rating</h4>
+            <div class="sidebar-item">⭐⭐⭐⭐⭐ &nbsp;5 Stars <span class="sidebar-count">72</span></div>
+            <div class="sidebar-item">⭐⭐⭐⭐ &nbsp;4+ Stars <span class="sidebar-count">145</span></div>
+            <div class="sidebar-item">⭐⭐⭐ &nbsp;3+ Stars <span class="sidebar-count">198</span></div>
+          </div>
+
+        </aside>
+
+        <!-- Products -->
+        <div>
+          <p style="font-size:0.88rem;color:var(--clr-text-muted);margin-bottom:1.2rem;">Showing <strong>12</strong> of 248 products</p>
+          <div class="shop-products-grid">
+
+            <!-- Product 1 -->
+            <div class="shop-product-card anim-fade-up">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=500&q=75" alt="Apples"/>
+                <span class="product-badge badge-fresh">Fresh</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Fruits</div>
+                <h4>Royal Gala Apples</h4>
+                <p class="prod-desc">Sweet, crisp apples. Ideal for snacking, 1kg pack.</p>
+                <div class="shop-product-bottom">
+                  <div><span class="price">$3.99</span><span class="price-old">$5.49</span></div>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="shop-product-card anim-fade-up delay-1">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=500&q=75" alt="Avocado"/>
+                <span class="product-badge badge-new">New</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Fruits</div>
+                <h4>Hass Avocado Pack</h4>
+                <p class="prod-desc">Perfectly ripe Hass avocados. Pack of 4.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$5.49</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="shop-product-card anim-fade-up delay-2">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500&q=75" alt="Potato"/>
+                <span class="product-badge badge-sale">Sale</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Vegetables</div>
+                <h4>Baby Potatoes 1kg</h4>
+                <p class="prod-desc">Tender baby potatoes, great for roasting or boiling.</p>
+                <div class="shop-product-bottom">
+                  <div><span class="price">$2.29</span><span class="price-old">$3.49</span></div>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="shop-product-card anim-fade-up">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500&q=75" alt="Milk"/>
+                <span class="product-badge badge-fresh">Fresh</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Dairy</div>
+                <h4>Whole Farm Milk 2L</h4>
+                <p class="prod-desc">Creamy whole milk from grass-fed cows, 2L bottle.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$3.19</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="shop-product-card anim-fade-up delay-1">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=500&q=75" alt="Vegetables"/>
+                <span class="product-badge badge-fresh">Fresh</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Vegetables</div>
+                <h4>Mixed Salad Greens</h4>
+                <p class="prod-desc">Washed, ready-to-eat mixed leafy greens, 200g.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$4.49</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="shop-product-card anim-fade-up delay-2">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=500&q=75" alt="Yogurt"/>
+                <span class="product-badge badge-new">New</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Dairy</div>
+                <h4>Greek Yogurt 500g</h4>
+                <p class="prod-desc">Thick, creamy Greek-style natural yogurt. High protein.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$4.79</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="shop-product-card anim-fade-up">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1534353436294-0dbd4bdac845?w=500&q=75" alt="Orange Juice"/>
+                <span class="product-badge badge-fresh">Fresh</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Beverages</div>
+                <h4>Cold-Pressed OJ 1L</h4>
+                <p class="prod-desc">Freshly pressed orange juice, no added sugar, 1 litre.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$6.29</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="shop-product-card anim-fade-up delay-1">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=500&q=75" alt="Berries"/>
+                <span class="product-badge badge-sale">Sale</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Fruits</div>
+                <h4>Mixed Berry Punnet</h4>
+                <p class="prod-desc">Blueberries, raspberries, and strawberries. 400g punnet.</p>
+                <div class="shop-product-bottom">
+                  <div><span class="price">$5.99</span><span class="price-old">$7.99</span></div>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="shop-product-card anim-fade-up delay-2">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?w=500&q=75" alt="Sourdough"/>
+                <span class="product-badge badge-new">New</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Bakery</div>
+                <h4>Artisan Sourdough</h4>
+                <p class="prod-desc">Stone-baked sourdough loaf, made fresh daily.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$7.49</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="shop-product-card anim-fade-up">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&q=75" alt="Honey"/>
+                <span class="product-badge badge-fresh">Organic</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Pantry</div>
+                <h4>Raw Wildflower Honey</h4>
+                <p class="prod-desc">Pure raw wildflower honey, unfiltered, 500g jar.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$9.99</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="shop-product-card anim-fade-up delay-1">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=500&q=75" alt="Spinach"/>
+                <span class="product-badge badge-fresh">Fresh</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Vegetables</div>
+                <h4>Baby Spinach 250g</h4>
+                <p class="prod-desc">Young, tender baby spinach leaves, pre-washed.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$3.49</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="shop-product-card anim-fade-up delay-2">
+              <div class="product-thumb">
+                <img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?w=500&q=75" alt="Free Range Eggs"/>
+                <span class="product-badge badge-fresh">Farm</span>
+              </div>
+              <div class="shop-product-info">
+                <div class="product-cat">Dairy & Eggs</div>
+                <h4>Free-Range Eggs ×12</h4>
+                <p class="prod-desc">Pasture-raised free-range eggs. Dozen pack.</p>
+                <div class="shop-product-bottom">
+                  <span class="price">$5.29</span>
+                  <button class="add-to-cart-btn">+ Cart</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pagination -->
+          <div style="display:flex;gap:0.6rem;margin-top:2.5rem;justify-content:center;flex-wrap:wrap;">
+            <span class="filter-tag active" style="min-width:40px;text-align:center;">1</span>
+            <span class="filter-tag" style="min-width:40px;text-align:center;">2</span>
+            <span class="filter-tag" style="min-width:40px;text-align:center;">3</span>
+            <span class="filter-tag" style="min-width:40px;text-align:center;">→</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="nav-logo-icon">🌿</div>
+            Freshly
+          </a>
+          <p>Premium organic groceries delivered fresh to your door. We partner with local farms to bring you the finest produce every day.</p>
+          <div class="footer-social" style="margin-top:1.2rem;">
+            <div class="social-icon">𝕏</div>
+            <div class="social-icon">f</div>
+            <div class="social-icon">in</div>
+            <div class="social-icon">📸</div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="shop.html">Fresh Fruits</a></li>
+            <li><a href="shop.html">Vegetables</a></li>
+            <li><a href="shop.html">Dairy & Eggs</a></li>
+            <li><a href="shop.html">Beverages</a></li>
+            <li><a href="shop.html">Pantry Staples</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">📍 12 Green Market St, Accra</a></li>
+            <li><a href="#">📞 +233 30 000 0000</a></li>
+            <li><a href="#">✉️ hello@freshly.store</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Freshly. All rights reserved.</span>
+        <span>Privacy Policy · Terms of Service</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
