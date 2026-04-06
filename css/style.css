@@ -644,7 +644,7 @@ h1,h2,h3,h4 { font-family: var(--font-display); line-height: 1.2; }
 
 .promo-bg {
   position: absolute; inset: 0;
-  background: url('https://images.unsplash.com/photo-1542838132-92c53300491e?w=1400&q=80') center/cover no-repeat;
+  background: url('/images/home/veg-back.jpg') center/cover no-repeat;
 }
 
 .promo-overlay {
